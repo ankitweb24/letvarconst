@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>let var const</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-family: "Open Sans", sans-serif;
+      }
+      body {
+        padding: 30px;
+        position: relative;
+      }
+      h2 {
+        text-align: center;
+        margin: 30px 0;
+        text-transform: capitalize;
+        font-size: 1.8rem;
+        color: black;
+      }
+      table {
+        border-collapse: collapse;
+        position: relative;
+        text-align: center;
+      }
+
+      th {
+        padding: 15px !important;
+        font-size: 2.5rem;
+      }
+      td{
+          padding: 15px;
+          font-size: 1.5rem;
+          font-weight: bold;
+
+      }
+      tr:nth-child(even){
+          background-color: rgb(233, 255, 243);
+          border-radius: 10px!important;
+      }
+
+      footer{
+         margin: 30px 0;
+          text-align: center;
+          font-size: 1.2rem;
+          text-transform: capitalize;
+      }
+
+      @media (max-width:768px) {
+        th {
+        font-size: 2rem;
+      }
+      td{
+          font-size: 1rem;
+
+
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>diffrence between Var, Let Or Const?</h2>
+    <table>
+      <tr>
+        <th>Var</th>
+        <th>Let</th>
+        <th>Const</th>
+      </tr>
+      <tr>
+        <td>The scope of a var variable is functional scope.</td>
+        <td>The scope of a let variable is block scope.</td>
+        <td>The scope of a const variable is block scope.</td>
+      </tr>
+      <tr>
+          <td>It can be updated and re-declared into the scope.</td>
+          <td>It can be updated but cannot be re-declared into the scope.</td>
+          <td>It cannot be updated or re-declared into the scope.</td>
+      </tr>
+      <tr>
+          <td>It can be declared without initialization.</td>
+          <td>It can be declared without initialization.</td>
+          <td>It cannot be declared without initialization.</td>
+      </tr>
+      <tr>
+          <td>It can be accessed without initialization as its default value is “undefined”.</td>
+          <td>It cannot be accessed without initialization, as it returns an error.</td>
+          <td>It cannot be accessed without initialization, as it cannot be declared without initialization.</td>
+      </tr>
+    </table>
+
+    <footer>by excellent code with aj</footer>
+  </body>
+</html>
